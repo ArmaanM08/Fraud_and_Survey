@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Fraud Analysis</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" />
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+	<header>
+		<h1><a href="index.html">Payment Security Survey & Fraud Dashboard</a></h1>
+		<a class="btn" href="survey.html">Open Survey</a>
+	</header>
+	<main>
+		<section class="grid">
+			<div class="card">
+				<div style="display:flex; align-items:center; justify-content:space-between; gap:8px;">
+					<h2>Transaction Simulator</h2>
+					<div class="actions">
+						<button id="toggle-simulation" class="btn">Pause</button>
+						<button id="delete-transactions" class="btn ghost">Delete Transactions</button>
+					</div>
+				</div>
+				<div id="transaction-log" class="log"></div>
+			</div>
+			<div class="card">
+				<h2>Fraud Insights</h2>
+				<canvas id="fraud-chart" height="160"></canvas>
+			</div>
+		</section>
+	</main>
+	<script src="fraud-analysis.js"></script>
+</body>
+</html>

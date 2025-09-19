@@ -4,17 +4,22 @@
   "description": "Survey + Real-time transaction logging + anomaly detection with MongoDB change streams",
   "main": "src/server.js",
   "type": "module",
+  "homepage": "https://ArmaanM08.github.io/Fraud_and_Survey",
   "scripts": {
     "dev": "node src/server.js",
     "start": "NODE_ENV=production node src/server.js",
     "seed": "node src/transactionSimulator.js",
-    "seed:users": "node src/seedUsers.js"
+    "seed:users": "node src/seedUsers.js",
+    "deploy": "gh-pages -d docs"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "mongodb": "^6.8.0",
-    "nanoid": "^5.0.7",
-    "cors": "^2.8.5"
+    "nanoid": "^5.0.7"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
-} 
+}
